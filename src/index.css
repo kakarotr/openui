@@ -129,6 +129,10 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+@utility ring-primary {
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--primary) 10%, transparent);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
